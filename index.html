@@ -11,64 +11,61 @@
 <title>They Think It's All Clover</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row" id="hero-outer">
-            <div id="hero-image"></div>
-        </div>
+    <header class="row" id="header">
+        <div class="col-sm-12" id="hero-image"></div>
     </header>
-    <section class="container-fluid content-section">
-        <div class="row" id="tweets-summary-detail">
-            <div class="col-sm-12 col-md-4 col-lg-3" id="tweets-summary">
-                <h4>Paddy's Day tweets:</h4>
-                <h4 id="site-hash-tag">#TheyThinkItsAllClover</h4>
-                <div id="total-tweets-num">
-                    <!-- 
-                        Populate value from backend eventually.
-                        Dummy value of 3586 for now - remove <p> when backend in place.
-                    -->
-                    <h3>3586</h3>
-                </div>
-                <div class="row">
-                    <div class="col-9">
-                        <h5>TOTAL TWEETS</h5>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 text-box outer-box">
+                <h1 class="title">Paddy's Day Tweets</h1>
+                <div class="inner-box">
+                    <h1 class="hashtag">#TheyThinkItsAllClover</h1>
+                    <div class="row">
+                        <div class="col-6 text-sub-box">
+                            <h2 class="tweet-count">1,234</h2>
+                            <p class="tweet-count-subtitle">Total Tweets</p>
+                        </div>
+                        <div class="col-6 text-sub-box">
+                            <h3 class='prompt'>Join in!</h3>
+                            <a href="#" class="tweet-button"><?xml version="1.0" encoding="UTF-8"?>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="twitter-icon">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>Tweet</a>
+                        </div>
                     </div>
-                    <div class="col-3 text-center">
-                        <button type="submit" class="btn btn-success submit-changes-btn">Tweet</button>
-                    </div>
                 </div>
             </div>
+            <div class="col-sm-12 col-lg-6 tweet-box outer-box">
+                <h2 class="title">Tweet Board</h2>
+                <div class="tweet-board overflow-auto">
+                    <ul>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
+                        <li>placeholder</li>
 
-			<div class="col-sm-12 col-md-8 col-lg-9" id="tweets-feed">
-                <div class="text-center" id="tweets-feed-table">                    
-                    <!-- 
-                        Populate value from backend eventually.
-                        Dummy image for now - remove <img> when backend in place.
-                    -->
-                    <img src="client/assets/images/dummy-table.png" alt="Dummy table image">                
+                    </ul>
                 </div>
             </div>
-
-            <div class="col-12">
-                <h3>Tweeting about Paddy's day in the world:</h3>
-                <div class="text-center" id="tweet-map">
-                    <!-- 
-                        Populate value from backend eventually.
-                        Dummy image for now - remove <img> when backend in place.
-                    -->
-                    <img src="client/assets/images/dummy-map.png" alt="Dummy map image"> 
+        </div>
+        <div class="row">
+            <div class="col-sm-12 map-box outer-box">
+                <h2 class="title">Tweet Map</h2>
+                <div class="inner-box" id='map'>
                 </div>
             </div>
-
-        </div>        
-    </section>
+        </div>
+    </main>
 
     <footer>
-        <div class="row">
-            <div class="col copyright">
-                <em class="far fa-copyright"></em>2021 #TheyThinkItsAllClover
-            </div>
-        </div>         
-    </footer> 
+        
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
