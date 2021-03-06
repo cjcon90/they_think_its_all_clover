@@ -1,12 +1,11 @@
 from pymongo import MongoClient
 from flask import Flask, jsonify
-from datetime import datetime as dt
 import os
 import json
 from bson import json_util
 
 # Connect to MongoDB database
-client = MongoClient(f"mongodb+srv://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_CLUSTER')}.wijab.mongodb.net/{os.getenv('DB_COLL')}?retryWrites=true&w=majority")
+client = MongoClient(f"mongodb+srv://{os.environ.get('DB_USER')}:{os.environ.get('DB_PASSWORD')}@{os.environ.get('DB_CLUSTER')}.wijab.mongodb.net/{os.environ.get('DB_COLL')}?retryWrites=true&w=majority")
 db = client['they_think_its_all_clover']
 coll = db['tweet']
 
