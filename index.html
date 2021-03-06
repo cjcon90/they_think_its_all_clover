@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="They Think It's All Clover"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="client/assets/css/style.css">
+<title>They Think It's All Clover</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row" id="hero-outer">
+            <div id="hero-image"></div>
+        </div>
+    </header>
+    <section class="container-fluid content-section">
+        <div class="row" id="tweets-summary-detail">
+            <div class="col-sm-12 col-md-4 col-lg-3" id="tweets-summary">
+                <h4>Paddy's Day tweets:</h4>
+                <h4 id="site-hash-tag">#TheyThinkItsAllClover</h4>
+                <div id="total-tweets-num">
+                    <!-- 
+                        Populate value from backend eventually.
+                        Dummy value of 3586 for now - remove <p> when backend in place.
+                    -->
+                    <h3>3586</h3>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <h5>TOTAL TWEETS</h5>
+                    </div>
+                    <div class="col-3 text-center">
+                        <button type="submit" class="btn btn-success submit-changes-btn">Tweet</button>
+                    </div>
+                </div>
+            </div>
+
+			<div class="col-sm-12 col-md-8 col-lg-9" id="tweets-feed">
+                <div class="text-center" id="tweets-feed-table">                    
+                    <!-- 
+                        Populate value from backend eventually.
+                        Dummy image for now - remove <img> when backend in place.
+                    -->
+                    <img src="client/assets/images/dummy-table.png" alt="Dummy table image">                
+                </div>
+            </div>
+
+            <div class="col-12">
+                <h3>Tweeting about Paddy's day in the world:</h3>
+                <div class="text-center" id="tweet-map">
+                    <!-- 
+                        Populate value from backend eventually.
+                        Dummy image for now - remove <img> when backend in place.
+                    -->
+                    <img src="client/assets/images/dummy-map.png" alt="Dummy map image"> 
+                </div>
+            </div>
+
+        </div>        
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col copyright">
+                <em class="far fa-copyright"></em>2021 #TheyThinkItsAllClover
+            </div>
+        </div>         
+    </footer> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="client/assets/js/scripts.js"></script>
+</body>
+</html>
