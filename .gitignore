@@ -1,6 +1,9 @@
 #KEYS
 credentials.py
 
+#Testing JSON Data
+example.json
+
 # Editors
 .vscode/
 .idea/
