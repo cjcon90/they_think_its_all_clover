@@ -8,7 +8,7 @@ html {
 /* Increase base font size for iPad and up */
 @media only screen and (min-width: 768px) {
     html {
-        font-size: 100%;
+        font-size: 90%;
     }
 }
 
@@ -23,10 +23,14 @@ body{
     font-weight: 500;
     color: #494949;
     width: 100%;
+    /* Wallpaper source: https://www.publicdomainpictures.net/en/view-image.php?image=112124&picture=shamrock-wallpaper-background */
+    background-image: url('https://res.cloudinary.com/cjcon90/image/upload/v1615047486/they_think_its_all_clover/wallpapertip_shamrock-wallpaper_1951752.png');
+    background-size: 100%;
+    backdrop-filter: opacity(.2);
 }
 /* source for transparent background code: https://css-tricks.com/snippets/css/transparent-background-images/ */
 /* Wallpaper source: https://www.publicdomainpictures.net/en/view-image.php?image=112124&picture=shamrock-wallpaper-background */
-body::after {
+/* body::after {
     content: '';
     background-image: url('https://res.cloudinary.com/cjcon90/image/upload/v1615047486/they_think_its_all_clover/wallpapertip_shamrock-wallpaper_1951752.png');
     background-size: 100vw;
@@ -37,11 +41,11 @@ body::after {
     bottom: 0;
     position: absolute;
     z-index: -1;
-}
+} */
 
 /************************************************** Typography */
 
-/* SEction titles */
+/* Section titles */
 .title {
     display: inline-block;
     width: 100%;
@@ -57,7 +61,7 @@ body::after {
 /* Hashtag with gradient background */
 .hashtag {
     font-size: 3rem;
-    background: linear-gradient(to right, #219664, #1bff26, #ffa34e, #ff8a4c);
+    background: linear-gradient(to right, #219664,#32e095, #ffab5c, #ff8a4c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -93,6 +97,7 @@ body::after {
     border-radius: 1rem;
     max-width: 95%;
     box-shadow: 0 0 20px rgba(0,0,0, .4);
+    background: rgba(255, 255, 255, .85);
 }
 
 @media only screen and (min-width: 768px) {
