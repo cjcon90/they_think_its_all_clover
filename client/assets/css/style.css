@@ -1,0 +1,104 @@
+/************************ --- GLOBAL --- ***************************/
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+    font-family: Lato;
+    font-weight: 500;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/************************************************** Header section */
+
+header {
+    background-color: #98d4a6;
+    color: #fafafa;
+} 
+
+#hero-outer{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0px;
+}
+
+#hero-image{
+    height: 100%;
+    width: 100%;
+    background: url("../images/hero_image.jpg") center center;
+    -webkit-animation-name: hero-zoom;
+            animation-name: hero-zoom;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hero-zoom {
+    from{
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+    to{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes hero-zoom {
+    from{
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+    to{
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+/************************************************** Content section */
+
+.content-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+#site-hash-tag {
+    color: green;
+}
+
+/************************************************** Footer section */
+
+footer {
+    background-color: green;
+    color: #fafafa;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*----------------- Copyright entry */
+.copyright {
+	margin: auto 8px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.copyright em {
+	margin-right: 5px;
+}

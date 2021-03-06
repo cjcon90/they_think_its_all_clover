@@ -17,6 +17,8 @@ TheyThinkItsAllClover is a python flask web-app aiming to bring the world togeth
 
 <a name='Stories'></a>
 
+![Image](docs/site-mock-up-rough-2021-03-06.png)
+
 ## User Stories
 
 **As a visitor to the site, I want to:**
@@ -44,6 +46,7 @@ TheyThinkItsAllClover is a python flask web-app aiming to bring the world togeth
 <a name='Wireframes'></a>
 
 ### Wireframes
+> - [Wireframes](docs/wireframe.pdf): A single page website.
 
 <a name='Testing'></a>
 
