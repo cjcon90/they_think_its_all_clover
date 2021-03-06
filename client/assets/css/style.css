@@ -1,10 +1,11 @@
 /************************ --- GLOBAL --- ***************************/
 @import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
 
+/* font-size at 62.5% makes 1rem = 10px for mobile sizing */
 html {
     font-size: 62.5%;
 }
-
+/* Increase base font size for iPad and up */
 @media only screen and (min-width: 768px) {
     html {
         font-size: 100%;
@@ -23,7 +24,7 @@ body{
     color: #494949;
     width: 100%;
 }
-/* source: https://css-tricks.com/snippets/css/transparent-background-images/ */
+/* source for transparent background code: https://css-tricks.com/snippets/css/transparent-background-images/ */
 /* Wallpaper source: https://www.publicdomainpictures.net/en/view-image.php?image=112124&picture=shamrock-wallpaper-background */
 body::after {
     content: '';
@@ -40,6 +41,7 @@ body::after {
 
 /************************************************** Typography */
 
+/* SEction titles */
 .title {
     display: inline-block;
     width: 100%;
@@ -52,6 +54,7 @@ body::after {
     border-radius: 10px 10px 0 0;
 }
 
+/* Hashtag with gradient background */
 .hashtag {
     font-size: 3rem;
     background: linear-gradient(to right, #219664, #1bff26, #ffa34e, #ff8a4c);
@@ -59,6 +62,7 @@ body::after {
     -webkit-text-fill-color: transparent;
     font-weight: 700;
 }
+
 
 .tweet-count {
     font-size: 3.5rem;
@@ -81,6 +85,7 @@ body::after {
 
 /************************************************** Layout */
 
+/* Section box */
 .outer-box {
     margin: 1.5rem auto;
     border: solid 2px rgba(0, 167, 74, .5);
@@ -104,6 +109,8 @@ body::after {
         max-width: 40vw;
     }
 }
+
+/* Section box minus heading */
 .inner-box {
     padding: 1rem;
 }
